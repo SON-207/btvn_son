@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tạo form cơ bản</title>
+</head>
+<body>
+<form action="#" method="get" style="width: 500px; height:220px;background-color: cadetblue">
+    <h2 style="color:white; text-align:center;background-color: orangered"=>SỞ THÍCH CỦA BẠN</h2>
+    <div style="display: flex; margin-bottom:10px">
+        <label for="name" style="margin-left: 20px">Họ Và Tên</label>
+        <input style="text-box: " id="name" name="name"><br>
+    </div>
+    <div style="display:flex; margin-bottom:10px">
+        <label for="email" style="margin-left: 20px">Email</label>
+        <input style="text-box: " id="email" name="email"><br>
+    </div>
+    <div>
+        <label style="display:flex">Sở thích</label>
+        <input type="checkbox" id="The thao" value="The thao"><span>Thể thao</span>
+        <input type="checkbox" id="Am nhac" value="Am nhac"><span>Âm nhạc</span>
+        <input type="checkbox" id="Doc sach" value="Doc sach"><span>Đọc sách</span><br>
+        <input type="checkbox" id="Luot web" value="Luot web"><span>Lướt web</span>
+        <input type="checkbox" id="Choi game" value="Choi game"><span>Chơi game</span>
+        <input type="checkbox" id="Dien anh" value="Dien anh"><span>Điện ảnh</span><br>
+        <input type="checkbox" id="Du lich" value="Du lich"><span>Du lịch</span><br>
+    </div>
+
+    <button type="submit">Gửi thông tin</button>
+    <button type="reset">Nhập lại</button>
+
+</form>
+    <form action="#" method="get" style="width:500px; height:300px;background-color: khaki">
+    <h2 style="color:blue; text-align: center;background-color: aquamarine ">ĐĂNG KÝ HỌC VIÊN</h2>
+        <div style="display: flex; margin-bottom:10px">
+        <label for="name2">Họ và tên</label>
+        <input style="text-box:" id="name2" name="name2"><br>
+        </div>
+        <div style="display:flex ;margin-bottom:10px">
+        <label for="ngaysinh">Ngày sinh</label>
+        <input style="text-box:" id="ngaysinh" name="ngaysinh"><br>
+        </div>
+
+        <label>Giới tính</label>
+        <input type="radio"  name="gioitinh" value="male"><span>Nam</span>
+        <input type="radio"  name="gioitinh" value="female"><span>Nữ</span><br>
+
+        <div style="display:flex ;margin-top: 10px">
+            <label for="diachi">Địa chỉ</label>
+            <textarea style="text-box:" id="diachi" name="diachi" rowspan="2" colspan="10"></textarea><br>
+        </div>
+        <div style="display:flex ;margin-top: 10px">
+            <label>Lớp</label>
+            <select>
+                <option value=" ">---Chọn lớp---</option>
+                <option>A13</option>
+                <option>A14</option>
+                <option>A15</option>
+            </select><br>
+
+        </div>
+      <div style="display:flex ;margin-top: 10px">
+          <label for="email">Email</label>
+          <input type="text" id="email" name="email">
+      </div>
+
+        <div style="display:flex ;margin-top: 10px">
+            <label for="phone">Điện thoại</label>
+            <input type="number" id="phone" name="phone"><br>
+        </div>
+        <button for="submit">Đăng Ký</button>
+        <button for="reset">Nhập lại</button>
+
+    </form>
+
+</body>
+</html>
