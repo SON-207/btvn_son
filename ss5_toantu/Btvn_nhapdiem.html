@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Diemtrungbinh</title>
+</head>
+<body>
+//Bai 1<br>
+<script>
+    let Ly = prompt("Nhap Diem Ly");
+    let Hoa = prompt("Nhap Diem Hoa");
+    let Sinh = prompt("Nhap Diem Sinh");
+    //Chuyen doi so
+    Ly = Number(Ly);
+    Hoa = Number(Hoa);
+    Sinh = Number(Sinh);
+    //Tinh Trung Binh
+    let TB = (Ly + Hoa + Sinh) / 3;
+    alert("Diem Trung Binh = " + TB);
+    //Tinh Tong
+    let Sum = Ly + Hoa + Sinh;
+    alert("Tong = " + Sum);
+    document.write("Diem trung binh = " + TB + "<br>");
+    document.write("Diem Tong = " + Sum + "<br>");
+</script>
+//Bai 2 <br>
+<script>
+    let C = prompt("Nhap nhiet do C :");
+    C = Number(C);
+    //Chuyen sang do F:
+    let F = (C * 1, 8) + 32;
+    alert(F);
+    //kq
+    document.write("Nhiet do C ban dau = " + C + "<br>");
+    document.write("Nhiet do C sang F = " + F);
+</script>
+<br>
+//Bai 3<br>
+<script>
+    let r = prompt("Nhap Ban kinh:");
+    const PI = 3.1415;
+    r = Number(r);
+    alert(r);
+    //Dien tich Hinh Tron
+    let S = PI * Math.pow(r, 2);
+    //kq
+    document.write("Dien tich hinh tron la = " + S);
+</script>
+<br>
+//Bai4 <br>
+<script>
+    let bk = prompt("Nhap Ban kinh:");
+    const P = 3.1415;
+    bk = Number(bk);
+    alert(bk);
+    //Chu vi Hinh tron
+    let chuvi = 2 * P * bk;
+    //kq
+    document.write("Chu Vi hinh tron la = " +chuvi);
+</script>
+</body>
+</html>
