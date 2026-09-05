@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>MAY TINH</title>
+</head>
+<body>
+<h2>MAY TINH</h2>
+
+<input type="text" id="manhinh" style="width:250px; height:40px; font-size:25px;"><br><br>
+
+<button onclick="nhap('1')">1</button>
+<button onclick="nhap('2')">2</button>
+<button onclick="nhap('3')">3</button>
+<button onclick="nhap('+')">+</button><br>
+
+<button onclick="nhap('4')">4</button>
+<button onclick="nhap('5')">5</button>
+<button onclick="nhap('6')">6</button>
+<button onclick="nhap('-')">-</button><br>
+
+<button onclick="nhap('7')">7</button>
+<button onclick="nhap('8')">8</button>
+<button onclick="nhap('9')">9</button>
+<button onclick="nhap('*')">x</button><br>
+
+<button onclick="xoa()">C</button>
+<button onclick="nhap('0')">0</button>
+<button onclick="tinh()">=</button>
+<button onclick="nhap('/')">/</button>
+
+<script>
+    function nhap(so) {
+        document.getElementById('manhinh').value += so;
+    }
+
+    function xoa() {
+        document.getElementById('manhinh').value = '';
+    }
+
+    function tinh() {
+        let ketqua = eval(document.getElementById('manhinh').value);
+        document.getElementById('manhinh').value = ketqua;
+    }
+</script>
+</body>
+</html>
