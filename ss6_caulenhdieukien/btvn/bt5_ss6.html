@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>rank </title>
+</head>
+<body>
+<script>
+    let TK =+prompt("nhap diem thuong ky");
+    let GK =+prompt("nhap diem giua ky");
+    let CK =+prompt("nhap diem cuoi ky");
+    let TB = (TK + GK*2 + CK*3) / 5;
+    if(TB > 8.5){
+        document.write("hoc sinh gioi");
+    }else if(TB >= 7 ){
+        document.write("hoc sinh kha");
+    }else if(TB >= 5){
+        document.write("hoc sinh Trung binh");
+    }else {
+        document.write("hoc sinh yeu");
+    }
+</script>
+</body>
+</html>

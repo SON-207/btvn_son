@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>nhan tien hoa hong</title>
+</head>
+<body>
+<script>
+    let dt = +prompt("nhap doanh thu (Don vi:trieu vn dong):");
+    let hh = 0;
+
+    if(dt <= 10){
+        hh = 0;
+    }else if(dt<=20){
+        hh = dt * 10 / 100;
+    }else if(dt<=50){
+        hh = dt * 15 / 100
+    }else {
+        hh = dt * 20 / 100   }
+document.write("so tien hoa hong la " +hh);
+    document.write(" trieu dong");
+</script>
+</body>
+</html>
