@@ -1,21 +1,46 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="vi">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Tính số ngày trong tháng</title>
 </head>
 <body>
-<h1>APP tinh ngay thang</h1>
-<input type="number" id ="month">
-<button onclick="Thang()">Tra cuu</button>
-<p id="kq"></p>
-<script>
-    function Thang() {
-        let tinhthang = document.getElementById("kq").value);
-        switch (Thang) {
-            case 1:
+<h2>Tính số ngày trong tháng</h2>
 
+<label>Nhập tháng (1-12):</label>
+<input type="number" id="thang">
+<button onclick="tinhNgay()">Tính số ngày</button>
+
+<p id="ketqua"></p>
+
+<script>
+    function tinhNgay() {
+        let thang = Number(document.getElementById("thang").value);
+        let soNgay = 0;
+        switch(thang) {
+            case 1:
+            case 3:
+            case 5:
+            case 7:
+            case 8:
+            case 10:
+            case 12:
+                soNgay = 31;
+                break;
+            case 4:
+            case 6:
+            case 9:
+            case 11:
+                soNgay = 30;
+                break;
+            case 2:
+                soNgay = 28;
+                break;
+            default:
+                document.getElementById("ketqua").innerHTML = " Tháng không hợp lệ ";
+                return;
         }
+        document.getElementById("ketqua").innerHTML = " Tháng " + thang + " có " + soNgay + " ngày";
     }
 </script>
 </body>
