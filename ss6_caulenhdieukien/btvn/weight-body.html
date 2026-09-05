@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tinh so can nang</title>
+</head>
+<body>
+<script>
+    let weight = +prompt("nhap so can nang");
+    console.log(weight);
+    let height = +prompt("nhap chieu cao");
+    console.log(height);
+    let bmi = weight / Math.pow(height,2);
+    console.log(bmi);
+    if (bmi < 18.5) {
+        document.write("Underweight");
+    } else if(bmi <25.0 ){
+        document.write("Normal");
+    } else if(bmi<30.0){
+        document.write("Overweight");
+    }else {
+        document.write("obese");
+    }
+
+</script>
+
+</body>
+</html>

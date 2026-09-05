@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Switch-case</title>
+</head>
+<body>
+<script>
+    // let month= +prompt("nhap thang");
+    // switch(month) {
+    //     case 1:
+    //         console.log("thang 1");
+    //         break;
+    //     case 2:
+    //         console.log("thang 2");
+    //         break;
+    //     case 3:
+    //         console.log("thang 3");
+    //         break;
+    //     case 4:
+    //         console.log("thang 4");
+    //         break;
+    //     case 5:
+    //         console.log("thang 5");
+    //         break;
+    //     case 6:
+    //         console.log("thang 6");
+    //         break;
+    //     case 7:
+    //         console.log("thang 7");
+    //         break;
+    //     case 8:
+    //         console.log("thang 8");
+    //         break;
+    //     case 9:
+    //         console.log("thang 9");
+    //         break;
+    //     case 10:
+    //         console.log("thang 10");
+    //         break;
+    //     case 11:
+    //         console.log("thang 11");
+    //         break;
+    //     case 12:
+    //         console.log("thang 12");
+    //         break;
+    //
+    // }
+    // console.log("ket thuc chuong trinh");
+
+    let month =+prompt("nhap thang");
+    switch (month) {
+        case 1:
+        case 3:
+        case 5:
+        case 7:
+        case 9:
+        case 11:
+            console.log("thang co 30 ngay");
+            break;
+        case 2:
+            console.log("thang co 28 ngay");
+            break;
+        case 4:
+        case 6:
+        case 8:
+        case 10:
+        case 12:
+            console.log("thang co 31 ngay");
+            break;
+        default:
+            console.log("day ko phai la thang trong nam");
+            break;
+    }
+    console.log("ket thuc ctr");
+</script>
+
+</body>
+</html>
