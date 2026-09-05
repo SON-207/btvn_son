@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tinh dien tich tam giac vuong</title>
+</head>
+<body>
+<h1>Tinh dien tich tam giac vuong</h1>
+<input type="number" id="canhA" placeholder="nhap a">
+<input type="number" id="canhB" placeholder="nhap B">
+<button onclick="tinhdientich()">tinh</button>
+<p id="result"></p>
+<script>
+    function tinhdientich() {
+        let a=document.getElementById("canhA").value;
+        let b=document.getElementById("canhB").value;
+        let ke1=Number(a);
+        let ke2=Number(b);
+        if(isNaN(ke1) || isNaN(ke2)){
+            document.getElementById("result").innerHTML="vui long nhap so";
+            return;
+        }else if(ke1 < 0 || ke2 < 0){
+            document.getElementById("result").innerHTML="vui long nhap so duong";
+        }else{
+            let S = 0.5 * ke1 * ke2;
+            document.getElementById("result").innerHTML = "dien tich tam giac vuong = "+S;
+        }
+    }
+</script>
+</body>
+</html>
