@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kiểm tra nhiệt độ</title>
+</head>
+<body>
+<h1>Chuyển đổi nhiệt độ</h1>
+<script>
+    let C = +prompt("nhap do C");
+    let F = 0;
+    if (C >= -273.15){
+        F = C * 9/5 + 32;
+        document.write("nhien do C = " +C +"°C<br>");
+        document.write("nhiet do khi chuyen sang F = " +F +"°F" );
+
+    }else {
+        document.write("nhiet do ko hop le");
+    }
+</script>
+</body>
+</html>
