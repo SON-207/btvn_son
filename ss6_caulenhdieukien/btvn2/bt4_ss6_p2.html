@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h2> Tính diện tích hình vuông</h2>
+<input type="number" id="canhA" placeholder="nhap canh">
+<input type="number" id="canhB" placeholder="nhap canh">
+
+<button onclick="tinhdientich()">Tinh</button>
+<p id="result"></p>
+<script>
+    function tinhdientich() {
+        let a = document.getElementById("canhA").value;
+        let b = document.getElementById("canhB").value;
+        let Dai = Number(a);
+        let Rong = Number(b);
+        if (isNaN(Dai) || isNaN(Rong)) {
+            document.getElementById("result").innerHTML = "hay nhap so"
+            return;
+        } else if (Dai < 0 || Rong < 0) {
+            document.getElementById("result").innerHTML = "hay nhap so duong"
+            return;
+        } else {
+            let dientich = Dai * Rong;
+
+
+            document.getElementById("result").innerHTML = "chieu dai = " + Dai + " <br>chieu rong =" + Rong + " <br>S = a * b = " + dientich;
+
+        }
+    }
+</script>
+</body>
+</html>
