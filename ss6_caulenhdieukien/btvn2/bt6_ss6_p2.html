@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Phuong Trinh bac nhat</title>
+</head>
+<body>
+<h1>Giải Phương Trình bậc nhất</h1>
+<input type="number" id="A" placeholder="moi nhap a">
+<input type="number" id="B" placeholder="moi nhap b">
+<button onClick="PTB1()">Giai</button>
+<p id="result"></p>
+<script>
+    function PTB1() {
+        let anA = document.getElementById("A").value;
+        let anB = document.getElementById("B").value;
+        let a = Number(anA);
+        let b = Number(anB);
+        if (isNaN(a) || isNaN(b)) {
+            document.getElementById("result").innerHTML = "hay nhap so";
+        }
+        if (a === 0) {
+            if (b === 0) {
+                document.getElementById("result").innerHTML = "Phuong trinh vo so nghiem";
+            } else {
+                document.getElementById("result").innerHTML = "Phuong trinh vo nghiem";
+            }
+        } else {
+            let x = -b / a;
+            document.getElementById("result").innerHTML = "pt co nghiem la x = " + x;
+        }
+    }
+</script>
+</body>
+</html>
