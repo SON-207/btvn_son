@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kiem tra canh tam giac</title>
+</head>
+<h1>Kiểm tra cạnh của tam giác</h1>
+<input type="number" id="canhA" placeholder="nhap canh a">
+<input type="number" id="canhB" placeholder="nhap canh b">
+<input type="number" id="canhC" placeholder="nhap canh c">
+<button onclick="tinhtamgiac()">Submit</button>
+<p id="result"></p>
+<script>
+    function tinhtamgiac() {
+        let a = parseFloat(document.getElementById("canhA").value);
+        let b = parseFloat(document.getElementById("canhB").value);
+        let c = parseFloat(document.getElementById("canhC").value);
+        if (a > 0 && b > 0 && c > 0) {
+            if (a + b > c) {
+                if (b + c > a) {
+                    if (a + c > b) {
+                        document.getElementById("result").innerHTML = "a b c la canh cua tam giac";
+                    } else {
+                        document.getElementById("result").innerHTML = "a b ckhong phai ba canh cua tam giac";
+                    }
+                } else {
+                    document.getElementById("result").innerHTML = "canh b + c < a nen ko phai 3 canh cua tam giac";
+                }
+            } else {
+                document.getElementById("result").innerHTML = "canh b + c < a nen ko phai 3 canh cua tam giac";
+            }
+
+        } else {
+            document.getElementById("result").innerHTML = "vui long nham abc > 0";
+        }
+    }
+</script>
+</body>
+</html>

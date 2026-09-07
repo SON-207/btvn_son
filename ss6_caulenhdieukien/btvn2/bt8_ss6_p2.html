@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>kiem tra tuoi</title>
+</head>
+<body>
+<h3>App Xác Minh tuổi từ chính phủ</h3>
+<input type="number" id="tuoi" placeholder="moi nhap tuoi">
+<button onclick="tinhtuoi()">Submit</button>
+<p id="result"></p>
+<script>
+    function tinhtuoi(){
+        let t = document.getElementById("tuoi").value;
+        if (isNaN(t)){
+            document.getElementById("result").innerHTML = "khong hop le";
+        }
+        if(t>0 && t < 120 ){
+            document.getElementById("result").innerHTML = "day la tuoi cua mot nguoi co so tuoi : " +t;
+        }else{
+            document.getElementById("result").innerHTML = "phai nhap so tuoi lon hon 0 va nho hon 120 ";
+        }
+    }
+</script>
+</body>
+</html>
