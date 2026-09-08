@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Giai thua</title>
+</head>
+<body>
+<script>
+    let n = +prompt("nhap so nguyen duong");
+    n = Number(n);
+    let gt=1;
+    if(n < 0){
+        console.log("n ko phai so nguyen duong");
+    }
+    for(let i =1 ; i <= n ; i++){
+        gt *= i;
+    }
+    console.log("giai thua cua so " +n +" = " +gt);
+</script>
+</body>
+</html>

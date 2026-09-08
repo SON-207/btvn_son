@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let f0 = 0;
+    let f1 = 1;
+    let fn;
+
+    console.log(f0);
+    console.log(f1);
+
+    for(let i = 2; i <10 ; i++){
+        fn = f0 + f1;
+        console.log(fn);
+        f0 = f1;
+        f1 = fn;
+    }
+</script>
+</body>
+</html>
