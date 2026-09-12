@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let N = 10;
+    let M = [];
+    for(let i = 0 ; i < N ; i++){
+        let value = parseInt(prompt("vi tri thu " +i +" = "));
+        M.push(value);
+    }
+    let V = parseInt(prompt("nhap V"));
+    if(M.includes(V)){
+        console.log("V is in the array");
+    }else{
+        console.log("V is not in the array");
+    }
+
+
+</script>
+</body>
+</html>
