@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+Bài 1- Viết chương trình khởi tạo mảng số nguyên gồm 10 phần tử khác nhau. Chương trình hiển thị ra được phần tử có giá trị lớn nhất trong mảng và vị trí của phần tử đó
+<body>
+<script>
+    var N = [1,2,3,4,5,6,7,8,9,10];
+    let max = N[0];
+    let vitri = 0;
+    for(let i = 1; i < N.length ; i++){
+        if(max < N[i] ) {
+            max = N[i];
+            vitri = i;
+        }
+    }
+    console.log("so lon nhat nam o vi tri " +vitri +" co gia tri = " +max);
+</script>
+</body>
+</html>

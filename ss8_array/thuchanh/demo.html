@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<script>
+    let lops = ["Phong","Vy","Danh"];
+    // console.log(lops.length);
+    // lops[3] = "Son";
+    // console.log(lops);
+    //
+    //let student = [1,"chanh", 40, "Da nang", true]; // luu duoc nhieu kieu du lieu khac nhau
+    // let numbers = [1,13,15,7]; // luu du lieu kieu so
+    // console.log(student);
+    // console.log(numbers);
+    //
+    // let numbers2 = new Array(1,3,6,8); // c1: khoi tao mang
+    let numbers3 = Array(2,4,6,7,9,10); // c2: khoi tao mang
+    // let numbers4 = new Array(5); // do dai mang la 5 va phan tu underfined
+    // let strings = new Array("5"); // chi co mot phan tu co gia tri la 5
+    // // duyet mang : di qua lan luot cac phan tu cua mang
+    // //de duyet mang thuong dung for (biet truoc so lan lap)
+    // for (let i = 0; i < numbers3.length; ++i) {
+    //     console.log("index:" +i +"-value:" + numbers3[i]);
+    // }
+    // //tim gia tri lon nhat
+    // let max = numbers[0];
+    // for (let i = 1; i < numbers.length; i++){
+    //     if(max < numbers[i]){
+    //         max = numbers[i];
+    //     }
+    // }
+    // alert("gia tri cua max = " +max);
+    // su dung for cai tien
+    //for in
+    for(let index in numbers3 ){
+        console.log(index + ":" + numbers3[index]);
+    }
+    //for let
+    for(let index of lops){
+        console.log(lops);
+    }
+    //duyet nguoc
+    for(let i = numbers3.length-1 ; i >= 0; i--){
+        console.log(numbers3[i]);
+    }
+    //duyet 1/2 phan tu trong mang
+    for(let i = numbers3.length/2; i<numbers3.length;i++){
+        console.log(numbers3[i]);
+    }
+    //JS co ho tro cac ham (phuong thuc)
+    //them , xoa cac pt, noi mang, dao mang
+    //them: dau -> dung unshift, cuoi-> dung push ,them bat ki splice
+    //xoa: dau - > shift , cuoi - > pop ,xoa bat ki splice
+    //spilce
+    let nums=[2,3.,9,7,6,5,1];
+    //xoa phan tu dau tien trong mang
+    nums.shift();
+    console.log(nums);
+    //xoa phan tu cuoi mang
+    nums.pop();
+    console.log(nums);
+    //them phan tu dau mang
+    nums.unshift(1);
+    console.log(nums);
+    //them phan tu cuoi mang
+    nums.push(7);
+    console.log(nums);
+    //xoa vi tri muon xoa
+    nums.splice(3,1);
+    console.log(nums);
+    //sap xep lai so
+    nums.sort();
+    console.log(nums);
+    //bien mang thanh chuoi
+    alert(nums.join("-"));
+</script>
+</body>
+</html>
