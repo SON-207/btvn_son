@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let A = 10;
+    let mangA = [];
+    let B = 10;
+    let mangB = [];
+    let C = 20;
+    let mangC = [];
+    for(let i = 0; i < A; i++){
+        let value = parseInt(prompt("nhap vi tri thu " +i +" = "));
+        mangA.push(value);
+    }
+    console.log("mang A" +mangA);
+    for(let i = 0; i < B; i++){
+        let value = parseInt(prompt("nhap vi tri thu " +i +" = "));
+        mangB.push(value);
+    }
+    console.log("mang B" +mangB);
+    mangC.push(mangA,mangB);
+    console.log("mangC" +mangC);
+</script>
+</body>
+</html>

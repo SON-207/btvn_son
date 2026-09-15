@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+Bài 1- Viết chương trình khởi tạo/nhập vào một mảng số nguyên gồm 10 phần tử. Chương trình sắp xếp mảng theo thứ tự giảm dần và hiển thị ra mảng đã được sắp xếp.
+<body>
+<script>
+  let N = 10;
+  let M = [];
+  for(let i = 0 ; i < N ; i++){
+    let value = parseInt(prompt("nhap gia tri thu " +i +" = "));
+    M.push(value);
+  }
+  console.log("Mang bang dau" +M);
+  M.sort((a, b) => b - a);
+  console.log("sau khi sap xep "+M);
+</script>
+</body>
+</html>
