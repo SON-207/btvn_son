@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<button onclick="display()">GOI</button>
+<p id="result"></p>
+<p id="result2"></p>
+<p id="result3"></p>
+<script>
+    let productList = ["samsung", "nokia" , "iphone","Bphone"];
+    let studentList = ["chanh" , "phong", "linh"];
+    let babaBis = ["vy","thu", "loan"];
+    display(productList, "result");
+    display(studentList, "result2");
+    display(babaBis, "result3");
+    function display(list,list2){
+        let tableString = `<table border="1" style="border-collapse: collapse">
+                        <tr>
+                            <th>Stt</th>
+                            <th>name</th>
+                        </tr>`;
+        for(let i = 0; i < list.length; i++){
+            tableString += `<tr>
+                            <td>${i+1}</td>
+                            <td>${list[i]}</td>
+                        </tr>`;
+        }
+        document.getElementById(list2).innerHTML = tableString;
+    }
+</script>
+</body>
+</html>

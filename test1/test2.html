@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>test2</title>
+</head>
+<body>
+<script>
+    function checkArray(arr){
+        if (arr.length %2 !== 0) return false;
+        //
+        let n = arr.length/2;
+        //
+        for(let i = 0; i < n ; i++) {
+            if(arr[i]*arr[i] !== arr[i + n]){
+                return false;
+            }
+        }
+        return true;
+    }
+
+    let mang = +prompt("nhap so N mang = ");
+    let arr = [];
+    for(let i = 0; i < mang ; i++){
+        let value = parseInt(prompt("nhap gia tri tai vi tri thu i " +i + " = " ));
+        arr.push(value);
+    }
+    console.log("Vậy mảng này" ,checkArray(arr));
+
+</script>
+</body>
+</html>
